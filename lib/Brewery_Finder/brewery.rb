@@ -1,7 +1,7 @@
 class Brewery
     @@all = []
 
-    def initialize
+    def initialize(attributes)
         @@all << self
     end 
 
