@@ -1,0 +1,16 @@
+Project:
+
+Brewery app that gets data from API that lets user find breweries depending on area.
+Gives more information on breweries in that area if user asks for it.
+
+Steps. 
+1. Welcome the user
+2. Ask for a zipcode
+3. Return on terminal the breweries in the zipcode area
+4. Ask for input for the brewery they want more information on
+5. Show more info based on the user input
+
+Classes 
+- CLI class: deals with things showing on the terminal 
+- API class: deals with processing API data
+- Brewery class: deals with the breweries
