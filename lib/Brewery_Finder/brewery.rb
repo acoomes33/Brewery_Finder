@@ -18,6 +18,8 @@ class Brewery
     end 
 
     def self.more_info(input)
-        puts ""
+        puts "more info based on #{input}"
+        puts "#{self.all[input - 1].name}"
+        #binding.pry
     end 
 end

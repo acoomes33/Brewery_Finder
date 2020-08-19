@@ -3,7 +3,8 @@ class CLI
     def start
         welcome
         list_breweries
-        goodbye
+        menu
+        #goodbye
     end 
 
     def welcome
@@ -17,13 +18,15 @@ class CLI
          Brewery.all.each.with_index(1) do |b, i|
              puts "#{i} - #{b.name}"
          end 
+         #binding.pry
     end 
 
     def menu 
         puts "Please choose a number from the list to learn more:"
-        input = gets.strip.to_i
-            if Brewery.all.size >= (input - 1)
-                Brewery.all(input - 1)
+        input = gets.to_i
+        #binding.pry
+            if Brewery.all.size >= (input) && input != 0
+                Brewery.more_info(input)
         else 
             puts "Make sure to type in a valid number"
             menu
