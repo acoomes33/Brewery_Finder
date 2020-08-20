@@ -10,8 +10,10 @@ class API
             street = brewery["street"]
             phone = brewery["phone"]
             url = brewery["website_url"]
+            city = brewery["city"]
+            state = brewery["state"]
         
-            Brewery.new(name, brewery_type, street, phone, url)
+            Brewery.new(name, brewery_type, street, phone, url, city, state)
         end 
     end 
 end 

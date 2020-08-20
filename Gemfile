@@ -9,3 +9,5 @@ gem 'pry', '~> 0.13.1'
 gem 'httparty', '~> 0.18.1'
 
 gem 'json', '~> 2.3', '>= 2.3.1'
+
+gem 'colorize', '~> 0.8.1'
