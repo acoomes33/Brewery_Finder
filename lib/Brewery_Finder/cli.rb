@@ -28,7 +28,7 @@ class CLI
     def menu 
         puts "Please choose a number from the list to learn more:"
         input = gets.to_i
-        if Brewery.all.size >= (input) && input != 0 && Brewery.all.size != 0
+        if Brewery.all.size >= (input) && input != 0
             Brewery.more_info(input)
         else 
             puts "Make sure to type in a valid number"
