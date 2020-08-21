@@ -11,7 +11,7 @@ class CLI
     end 
 
     def list_breweries
-        puts "Please enter a zipcode"
+        puts "Please enter a zipcode:"
         input = gets.strip
         API.get_breweries(input)
         if Brewery.all.size != 0
