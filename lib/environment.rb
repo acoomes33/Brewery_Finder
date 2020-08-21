@@ -4,5 +4,4 @@ require './lib/Brewery_Finder/brewery'
 
 require 'pry'
 require 'httparty'
-require 'json'
 require 'colorize'

@@ -5,15 +5,16 @@ class API
         #send get request to brewery api
         response = HTTParty.get(url)
         response.each do |brewery|
-            name = brewery["name"]
-            brewery_type = brewery["brewery_type"]
-            street = brewery["street"]
-            phone = brewery["phone"]
-            url = brewery["website_url"]
-            city = brewery["city"]
-            state = brewery["state"]
-        
-            Brewery.new(name, brewery_type, street, phone, url, city, state)
+            attribute_hash = {
+                name: brewery["name"],
+                brewery_type: brewery["brewery_type"],
+            street: brewery["street"],
+            phone: brewery["phone"],
+            url: brewery["website_url"],
+            city: brewery["city"],
+            state: brewery["state"]
+            }
+            Brewery.new(attribute_hash)
         end 
     end 
 end 
