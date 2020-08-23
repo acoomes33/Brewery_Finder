@@ -6,6 +6,10 @@ class Brewery
 
     def initialize(attribute_hash)
         attribute_hash.each {|key,value| self.send(("#{key}="), value)}
+        save
+    end 
+
+    def save 
         @@all << self
     end 
 
