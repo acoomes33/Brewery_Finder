@@ -17,14 +17,14 @@ class Brewery
         @@all 
     end 
 
-    def self.more_info(input)
-            brewery = self.all[input - 1]
-                puts "#{brewery.name.upcase}".colorize(:blue)
-                puts "  brewery type:".colorize(:light_blue) + " #{brewery.brewery_type}"
-                puts "  location:".colorize(:light_blue) + " #{brewery.street}, #{brewery.city}, #{brewery.state}"
-                puts "  phone:".colorize(:light_blue) + " #{brewery.phone}"
-                puts "  website:".colorize(:light_blue) + " #{brewery.url}"
-                puts "----------------------".colorize(:green)
+    # def self.more_info(input)
+    #         brewery = self.all[input - 1]
+    #             puts "#{brewery.name.upcase}".colorize(:blue)
+    #             puts "  brewery type:".colorize(:light_blue) + " #{brewery.brewery_type}"
+    #             puts "  location:".colorize(:light_blue) + " #{brewery.street}, #{brewery.city}, #{brewery.state}"
+    #             puts "  phone:".colorize(:light_blue) + " #{brewery.phone}"
+    #             puts "  website:".colorize(:light_blue) + " #{brewery.url}"
+    #             puts "----------------------".colorize(:green)
     
-    end 
+    # end 
 end
